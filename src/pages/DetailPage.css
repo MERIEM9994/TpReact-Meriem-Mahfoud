@@ -1,0 +1,18 @@
+/* DetailPage.css */
+.not-found {
+  text-align: center;
+  font-size: 2em;
+  color: #ff6b8b;
+  margin-top: 50px;
+}
+
+.kawaii-header {
+  text-align: center;
+  padding: 20px;
+  color: #ff6b8b;
+}
+
+.kawaii-header h1 {
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.5);
+}

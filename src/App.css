@@ -1,0 +1,21 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fff9fb;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Animation pour les éléments kawaii */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+.kawaii-element {
+  animation: float 3s ease-in-out infinite;
+}

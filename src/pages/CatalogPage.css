@@ -1,0 +1,49 @@
+/* src/pages/CatalogPage.css */
+.catalog-page {
+  background-color: #fff0f5;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.kawaii-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff6b8b;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.kawaii-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.5);
+}
+
+.kawaii-header p {
+  font-size: 1.2em;
+  color: #ff85a2;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+/* Effet kawaii supplémentaire */
+.products-grid::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20">🌸</text></svg>');
+  pointer-events: none;
+  z-index: 0;
+}
